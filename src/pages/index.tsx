@@ -1,8 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Nunito } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import SignInWithZkAuthButton from "./zk-auth";
+
+import SignInWithZkAuthButton from "zk-auth-sdk";
 
 const nunito = Nunito({ subsets: ["latin"], weight: "600" });
 
@@ -17,7 +17,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.center}>
-          <SignInWithZkAuthButton onAuth={() => {}} />
+          <SignInWithZkAuthButton />
         </div>
       </main>
     </>
