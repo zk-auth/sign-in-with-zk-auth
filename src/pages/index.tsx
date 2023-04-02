@@ -2,7 +2,7 @@ import Head from "next/head";
 import { Nunito } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 
-import SignInWithZkAuthButton from "zk-auth-sdk";
+import SignInWithZkAuthButton from "../components/button";
 
 const nunito = Nunito({ subsets: ["latin"], weight: "600" });
 
